@@ -61,11 +61,11 @@ console.log(Musa);
 // Question 4: What are the different ways you can clone an object? Give examples for each of them.
 
 const firstObject = { 
-Anambra:Awka,
-Bauchi: Bauchi,
-Bayelsa: Yenegoa
+Anambra:'Awka',
+Bauchi: 'Bauchi',
+Bayelsa: 'Yenegoa'
 };
-console.log(`firstObject = ${firstObject}`);
+// console.log(`firstObject = ${firstObject}`);
 
 //1) for ... in loop method 
 //EXAMPLE 
@@ -74,17 +74,17 @@ const secondObject = {};
 for (let key in firstObject){
 secondObject[key] = firstObject[key];
 }
-console.log(`secondObject = ${secondObject}`);
+// console.log(`secondObject = ${secondObject}`);
 
 //2) Object.assign() method 
 //EXAMPLE
-const thirdObject = Object.assign( {Abia:Umuahia, Adamawa: Yola}, firstObject)
-console.log(`thirdObject = ${thirdObject}`);
+const thirdObject = Object.assign( {Abia:'Umuahia', Adamawa: 'Yola'}, firstObject)
+// console.log(`thirdObject = ${thirdObject}`);
 
 //3) Spread Operator Method
 //EXAMPLE
 const fourthObject = {... firstObject}
-console.log(`fourthObject = ${fourthObject}`);
+// console.log(`fourthObject = ${fourthObject}`);
 
 // Question 5: As Nigeria goes to the polls, here is an object representing some of the Presidential Candidates:
 
